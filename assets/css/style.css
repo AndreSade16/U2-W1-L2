@@ -133,11 +133,14 @@ h1 {
   font-weight: bold;
   letter-spacing: -0.03em;
   margin-bottom: 0.7em;
+  max-width: 100%;
 }
 
 h1 span {
+  display: inline-block;
   position: relative;
   z-index: 2;
+  position: relative;
 }
 
 h1 span img {
@@ -237,6 +240,10 @@ iframe {
 }
 
 @media screen and (min-width: 1200px) {
+  h1 span {
+    white-space: nowrap;
+  }
+
   iframe,
   section {
     display: inline-block;
